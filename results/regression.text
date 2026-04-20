@@ -1,0 +1,387 @@
+======================
+基准维度： 整体满意度与情绪化表达
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+==================================================================================================================================
+                                                                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                          1.8265      0.020     89.429      0.000       1.786       1.867
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.使用约束与内容管控]      0.7073      0.059     12.028      0.000       0.592       0.823
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.促销与商业策略感知]     -0.6407      0.026    -24.918      0.000      -0.691      -0.590
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.功能丰富度与实用性]      0.1998      0.028      7.073      0.000       0.144       0.255
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.平台偏好]           0.5460      0.050     10.919      0.000       0.448       0.644
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.情感交互]           0.5457      0.039     14.174      0.000       0.470       0.621
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.整体可用性]         -0.3656      0.054     -6.764      0.000      -0.472      -0.260
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.模型表现变化感知]      -0.1816      0.048     -3.775      0.000      -0.276      -0.087
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.生成内容质量]         0.1095      0.025      4.382      0.000       0.061       0.159
+C(dimension, Treatment(reference='整体满意度与情绪化表达'))[T.系统性能与运行稳定性]    -0.2196      0.031     -7.197      0.000      -0.279      -0.160
+sentiment_score                                                    2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                        -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                         570.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+======================
+基准维度： 使用约束与内容管控
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+=================================================================================================================================
+                                                                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                         2.5339      0.057     44.632      0.000       2.423       2.645
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.促销与商业策略感知]      -1.3481      0.059    -22.981      0.000      -1.463      -1.233
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.功能丰富度与实用性]      -0.5075      0.060     -8.484      0.000      -0.625      -0.390
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.平台偏好]           -0.1614      0.073     -2.218      0.027      -0.304      -0.019
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.情感交互]           -0.1616      0.065     -2.471      0.013      -0.290      -0.033
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.整体可用性]          -1.0729      0.075    -14.216      0.000      -1.221      -0.925
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.整体满意度与情绪化表达]    -0.7073      0.059    -12.028      0.000      -0.823      -0.592
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.模型表现变化感知]       -0.8889      0.071    -12.457      0.000      -1.029      -0.749
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.生成内容质量]         -0.5978      0.058    -10.233      0.000      -0.712      -0.483
+C(dimension, Treatment(reference='使用约束与内容管控'))[T.系统性能与运行稳定性]     -0.9269      0.061    -15.213      0.000      -1.046      -0.807
+sentiment_score                                                   2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                       -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                     1.45e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.45e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+======================
+基准维度： 生成内容质量
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================================================
+                                                                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                      1.9360      0.020     95.017      0.000       1.896       1.976
+C(dimension, Treatment(reference='生成内容质量'))[T.使用约束与内容管控]       0.5978      0.058     10.233      0.000       0.483       0.712
+C(dimension, Treatment(reference='生成内容质量'))[T.促销与商业策略感知]      -0.7503      0.025    -29.592      0.000      -0.800      -0.701
+C(dimension, Treatment(reference='生成内容质量'))[T.功能丰富度与实用性]       0.0903      0.028      3.280      0.001       0.036       0.144
+C(dimension, Treatment(reference='生成内容质量'))[T.平台偏好]            0.4365      0.049      8.860      0.000       0.340       0.533
+C(dimension, Treatment(reference='生成内容质量'))[T.情感交互]            0.4362      0.038     11.611      0.000       0.363       0.510
+C(dimension, Treatment(reference='生成内容质量'))[T.整体可用性]          -0.4751      0.054     -8.833      0.000      -0.581      -0.370
+C(dimension, Treatment(reference='生成内容质量'))[T.整体满意度与情绪化表达]    -0.1095      0.025     -4.382      0.000      -0.159      -0.061
+C(dimension, Treatment(reference='生成内容质量'))[T.模型表现变化感知]       -0.2911      0.048     -6.094      0.000      -0.385      -0.197
+C(dimension, Treatment(reference='生成内容质量'))[T.系统性能与运行稳定性]     -0.3291      0.030    -10.912      0.000      -0.388      -0.270
+sentiment_score                                                2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                    -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                         551.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+======================
+基准维度： 功能丰富度与实用性
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+=================================================================================================================================
+                                                                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                         2.0263      0.023     87.025      0.000       1.981       2.072
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.使用约束与内容管控]       0.5075      0.060      8.484      0.000       0.390       0.625
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.促销与商业策略感知]      -0.8406      0.028    -30.320      0.000      -0.895      -0.786
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.平台偏好]            0.3461      0.051      6.724      0.000       0.245       0.447
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.情感交互]            0.3459      0.040      8.557      0.000       0.267       0.425
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.整体可用性]          -0.5654      0.055    -10.273      0.000      -0.673      -0.458
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.整体满意度与情绪化表达]    -0.1998      0.028     -7.073      0.000      -0.255      -0.144
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.模型表现变化感知]       -0.3814      0.049     -7.743      0.000      -0.478      -0.285
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.生成内容质量]         -0.0903      0.028     -3.280      0.001      -0.144      -0.036
+C(dimension, Treatment(reference='功能丰富度与实用性'))[T.系统性能与运行稳定性]     -0.4194      0.032    -12.998      0.000      -0.483      -0.356
+sentiment_score                                                   2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                       -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                         632.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+======================
+基准维度： 情感交互
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+============================================================================================================================
+                                                               coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------------
+Intercept                                                    2.3722      0.037     64.245      0.000       2.300       2.445
+C(dimension, Treatment(reference='情感交互'))[T.使用约束与内容管控]       0.1616      0.065      2.471      0.013       0.033       0.290
+C(dimension, Treatment(reference='情感交互'))[T.促销与商业策略感知]      -1.1865      0.040    -29.870      0.000      -1.264      -1.109
+C(dimension, Treatment(reference='情感交互'))[T.功能丰富度与实用性]      -0.3459      0.040     -8.557      0.000      -0.425      -0.267
+C(dimension, Treatment(reference='情感交互'))[T.平台偏好]            0.0002      0.057      0.004      0.997      -0.111       0.111
+C(dimension, Treatment(reference='情感交互'))[T.整体可用性]          -0.9113      0.062    -14.769      0.000      -1.032      -0.790
+C(dimension, Treatment(reference='情感交互'))[T.整体满意度与情绪化表达]    -0.5457      0.039    -14.174      0.000      -0.621      -0.470
+C(dimension, Treatment(reference='情感交互'))[T.模型表现变化感知]       -0.7273      0.056    -12.891      0.000      -0.838      -0.617
+C(dimension, Treatment(reference='情感交互'))[T.生成内容质量]         -0.4362      0.038    -11.611      0.000      -0.510      -0.363
+C(dimension, Treatment(reference='情感交互'))[T.系统性能与运行稳定性]     -0.7653      0.043    -17.864      0.000      -0.849      -0.681
+sentiment_score                                              2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                  -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                         928.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+======================
+基准维度： 系统性能与运行稳定性
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+==================================================================================================================================
+                                                                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                          1.6070      0.024     66.021      0.000       1.559       1.655
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.使用约束与内容管控]       0.9269      0.061     15.213      0.000       0.807       1.046
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.促销与商业策略感知]      -0.4212      0.029    -14.504      0.000      -0.478      -0.364
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.功能丰富度与实用性]       0.4194      0.032     12.998      0.000       0.356       0.483
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.平台偏好]            0.7655      0.053     14.327      0.000       0.661       0.870
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.情感交互]            0.7653      0.043     17.864      0.000       0.681       0.849
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.整体可用性]          -0.1460      0.056     -2.613      0.009      -0.256      -0.036
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.整体满意度与情绪化表达]     0.2196      0.031      7.197      0.000       0.160       0.279
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.模型表现变化感知]        0.0380      0.050      0.755      0.450      -0.061       0.137
+C(dimension, Treatment(reference='系统性能与运行稳定性'))[T.生成内容质量]          0.3291      0.030     10.912      0.000       0.270       0.388
+sentiment_score                                                    2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                        -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                         694.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+======================
+基准维度： 整体可用性
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+=============================================================================================================================
+                                                                coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------
+Intercept                                                     1.4609      0.051     28.579      0.000       1.361       1.561
+C(dimension, Treatment(reference='整体可用性'))[T.使用约束与内容管控]       1.0729      0.075     14.216      0.000       0.925       1.221
+C(dimension, Treatment(reference='整体可用性'))[T.促销与商业策略感知]      -0.2752      0.053     -5.158      0.000      -0.380      -0.171
+C(dimension, Treatment(reference='整体可用性'))[T.功能丰富度与实用性]       0.5654      0.055     10.273      0.000       0.458       0.673
+C(dimension, Treatment(reference='整体可用性'))[T.平台偏好]            0.9116      0.069     13.124      0.000       0.775       1.048
+C(dimension, Treatment(reference='整体可用性'))[T.情感交互]            0.9113      0.062     14.769      0.000       0.790       1.032
+C(dimension, Treatment(reference='整体可用性'))[T.整体满意度与情绪化表达]     0.3656      0.054      6.764      0.000       0.260       0.472
+C(dimension, Treatment(reference='整体可用性'))[T.模型表现变化感知]        0.1840      0.067      2.736      0.006       0.052       0.316
+C(dimension, Treatment(reference='整体可用性'))[T.生成内容质量]          0.4751      0.054      8.833      0.000       0.370       0.581
+C(dimension, Treatment(reference='整体可用性'))[T.系统性能与运行稳定性]      0.1460      0.056      2.613      0.009       0.036       0.256
+sentiment_score                                               2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                   -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                     1.33e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.33e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+======================
+基准维度： 模型表现变化感知
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+================================================================================================================================
+                                                                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                        1.6449      0.045     36.608      0.000       1.557       1.733
+C(dimension, Treatment(reference='模型表现变化感知'))[T.使用约束与内容管控]       0.8889      0.071     12.457      0.000       0.749       1.029
+C(dimension, Treatment(reference='模型表现变化感知'))[T.促销与商业策略感知]      -0.4592      0.047     -9.673      0.000      -0.552      -0.366
+C(dimension, Treatment(reference='模型表现变化感知'))[T.功能丰富度与实用性]       0.3814      0.049      7.743      0.000       0.285       0.478
+C(dimension, Treatment(reference='模型表现变化感知'))[T.平台偏好]            0.7275      0.065     11.226      0.000       0.601       0.855
+C(dimension, Treatment(reference='模型表现变化感知'))[T.情感交互]            0.7273      0.056     12.891      0.000       0.617       0.838
+C(dimension, Treatment(reference='模型表现变化感知'))[T.整体可用性]          -0.1840      0.067     -2.736      0.006      -0.316      -0.052
+C(dimension, Treatment(reference='模型表现变化感知'))[T.整体满意度与情绪化表达]     0.1816      0.048      3.775      0.000       0.087       0.276
+C(dimension, Treatment(reference='模型表现变化感知'))[T.生成内容质量]          0.2911      0.048      6.094      0.000       0.197       0.385
+C(dimension, Treatment(reference='模型表现变化感知'))[T.系统性能与运行稳定性]     -0.0380      0.050     -0.755      0.450      -0.137       0.061
+sentiment_score                                                  2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                      -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                     1.17e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.17e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+======================
+基准维度： 平台偏好
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+============================================================================================================================
+                                                               coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------------
+Intercept                                                    2.3725      0.049     48.511      0.000       2.277       2.468
+C(dimension, Treatment(reference='平台偏好'))[T.使用约束与内容管控]       0.1614      0.073      2.218      0.027       0.019       0.304
+C(dimension, Treatment(reference='平台偏好'))[T.促销与商业策略感知]      -1.1867      0.051    -23.283      0.000      -1.287      -1.087
+C(dimension, Treatment(reference='平台偏好'))[T.功能丰富度与实用性]      -0.3461      0.051     -6.724      0.000      -0.447      -0.245
+C(dimension, Treatment(reference='平台偏好'))[T.情感交互]           -0.0002      0.057     -0.004      0.997      -0.111       0.111
+C(dimension, Treatment(reference='平台偏好'))[T.整体可用性]          -0.9116      0.069    -13.124      0.000      -1.048      -0.775
+C(dimension, Treatment(reference='平台偏好'))[T.整体满意度与情绪化表达]    -0.5460      0.050    -10.919      0.000      -0.644      -0.448
+C(dimension, Treatment(reference='平台偏好'))[T.模型表现变化感知]       -0.7275      0.065    -11.226      0.000      -0.855      -0.601
+C(dimension, Treatment(reference='平台偏好'))[T.生成内容质量]         -0.4365      0.049     -8.860      0.000      -0.533      -0.340
+C(dimension, Treatment(reference='平台偏好'))[T.系统性能与运行稳定性]     -0.7655      0.053    -14.327      0.000      -0.870      -0.661
+sentiment_score                                              2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                  -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                     1.23e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.23e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+======================
+基准维度： 促销与商业策略感知
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 rating   R-squared:                       0.603
+Model:                            OLS   Adj. R-squared:                  0.602
+Method:                 Least Squares   F-statistic:                     3005.
+Date:                Wed, 25 Mar 2026   Prob (F-statistic):               0.00
+Time:                        17:49:44   Log-Likelihood:                -33910.
+No. Observations:               21811   AIC:                         6.784e+04
+Df Residuals:                   21799   BIC:                         6.794e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+=================================================================================================================================
+                                                                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                         1.1858      0.018     67.221      0.000       1.151       1.220
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.使用约束与内容管控]       1.3481      0.059     22.981      0.000       1.233       1.463
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.功能丰富度与实用性]       0.8406      0.028     30.320      0.000       0.786       0.895
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.平台偏好]            1.1867      0.051     23.283      0.000       1.087       1.287
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.情感交互]            1.1865      0.040     29.870      0.000       1.109       1.264
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.整体可用性]           0.2752      0.053      5.158      0.000       0.171       0.380
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.整体满意度与情绪化表达]     0.6407      0.026     24.918      0.000       0.590       0.691
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.模型表现变化感知]        0.4592      0.047      9.673      0.000       0.366       0.552
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.生成内容质量]          0.7503      0.025     29.592      0.000       0.701       0.800
+C(dimension, Treatment(reference='促销与商业策略感知'))[T.系统性能与运行稳定性]      0.4212      0.029     14.504      0.000       0.364       0.478
+sentiment_score                                                   2.7134      0.020    137.255      0.000       2.675       2.752
+word_count                                                       -0.0017      0.000    -11.095      0.000      -0.002      -0.001
+==============================================================================
+Omnibus:                     1919.203   Durbin-Watson:                   1.923
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             4806.717
+Skew:                           0.522   Prob(JB):                         0.00
+Kurtosis:                       5.049   Cond. No.                         565.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
